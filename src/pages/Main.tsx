@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import InterceptorWrapper from "../components/Form/InterceptorWrapper";
-import { InterceptorProps } from "../types/Interceptor";
+import MockWrapper from "../components/Form/MockWrapper";
+import { IMockData } from "../types/Interceptor";
 
 const Main = () => {
-  const [interceptors, setInterceptors] = useState<InterceptorProps[]>([]);
+  const [interceptors, setInterceptors] = useState<IMockData[]>([]);
 
   useEffect(() => {
     const listener = () => {
@@ -12,7 +12,7 @@ const Main = () => {
           Object.entries(data).map((mock) => ({
             id: mock[0],
             ...mock[1],
-          })) as InterceptorProps[]
+          })) as IMockData[]
         );
       });
     };
@@ -26,7 +26,7 @@ const Main = () => {
   return (
     <>
       {interceptors.map((interceptor) => (
-        <InterceptorWrapper {...interceptor} key={interceptor.id} />
+        <MockWrapper {...interceptor} key={interceptor.id} />
       ))}
     </>
   );

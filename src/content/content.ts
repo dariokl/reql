@@ -1,5 +1,5 @@
 var s = document.createElement("script");
-s.src = chrome.runtime.getURL("/static/js/intercept.js");
+s.src = chrome.runtime.getURL("/static/js/hijack.js");
 s.onload = function () {
   // @ts-ignore
   this.remove();

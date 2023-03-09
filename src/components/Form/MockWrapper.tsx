@@ -2,11 +2,11 @@ import React, { PropsWithChildren, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import Dropdown from "../Dropdown/Dropdown";
 import JsonEditor from "../Editor/JsonEditor";
-import PathForm from "./PathForm";
+import MockForm from "./MockForm";
 import { useForm, FormProvider } from "react-hook-form";
-import { InterceptorProps } from "../../types/Interceptor";
+import { IMockData } from "../../types/Interceptor";
 
-const InterceptorWrapper: React.FC<PropsWithChildren & InterceptorProps> = ({
+const MockWrapper: React.FC<PropsWithChildren & IMockData> = ({
   children,
   body,
   name,
@@ -37,6 +37,8 @@ const InterceptorWrapper: React.FC<PropsWithChildren & InterceptorProps> = ({
       chrome.storage.local.set({ [`${id}`]: getValues() });
     }
   };
+
+  // TODO: Refactor.
   return (
     <div className="flex-col w-[580px] ml-2 bg-white shadow-lg rounded-lg mt-4 mb-4">
       <FormProvider {...methods}>
@@ -49,7 +51,7 @@ const InterceptorWrapper: React.FC<PropsWithChildren & InterceptorProps> = ({
           </div>
           <Dropdown />
         </div>
-        <PathForm
+        <MockForm
           onSave={() => handleSave()}
           onDelete={() => chrome.storage.local.remove([`${id}`])}
         />
@@ -59,4 +61,4 @@ const InterceptorWrapper: React.FC<PropsWithChildren & InterceptorProps> = ({
   );
 };
 
-export default InterceptorWrapper;
+export default MockWrapper;

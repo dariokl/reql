@@ -10,7 +10,7 @@ interface IProps {
   onDelete: () => void;
 }
 
-const PathForm: React.FC<IProps> = ({ onSave, onDelete }): JSX.Element => {
+const MockForm: React.FC<IProps> = ({ onSave, onDelete }): JSX.Element => {
   const {
     register,
     formState: { errors },
@@ -39,4 +39,4 @@ const PathForm: React.FC<IProps> = ({ onSave, onDelete }): JSX.Element => {
   );
 };
 
-export default PathForm;
+export default MockForm;

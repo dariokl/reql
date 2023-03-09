@@ -25,7 +25,7 @@
   "web_accessible_resources": [
     {
       "matches": ["http://localhost/*"],
-      "resources": ["/static/js/intercept.js"]
+      "resources": ["/static/js/hijack.js"]
     }
   ]
 }

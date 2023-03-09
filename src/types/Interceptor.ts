@@ -1,8 +1,7 @@
-export interface InterceptorProps {
+export interface IMockData {
   id: string;
   body: string;
   name: string;
   type: string;
-  autoGenerate: boolean;
   active: boolean;
 }

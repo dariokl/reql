@@ -11,7 +11,7 @@ module.exports = {
           ].filter(Boolean),
           background: "./src/background/background.ts",
           content: "./src/content/content.ts",
-          intercept: "./src/intercept/intercept.ts",
+          hijack: "./src/hijack/hijack.ts",
         },
         output: {
           ...webpackConfig.output,
