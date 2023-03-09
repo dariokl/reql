@@ -18,4 +18,5 @@ One possible way to intercept or hijack requests in chrome extension with MV3 is
 
 # Notes
 
-Extension will inject intercept.js script only for `http://localhost:/*`.
+Extension will inject hijack.js script only for `http://localhost:/*`.
+Each created mock is automatically marked as `active` either deactivate or remove the mock once its not needed.
