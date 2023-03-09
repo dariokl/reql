@@ -10,7 +10,7 @@ npm run build
 
 After the build runs successfully you should see `build` folder now.
 
-Go to chrome://extensions/. At the top right, turn on Developer mode. Click Load unpacked. Find and select `build` folder that has been created in root file.
+Go to `chrome://extensions/` At the top right, turn on Developer mode. Click Load unpacked. Find and select `build` folder that has been created in root file.
 
 # How does it work ?
 
