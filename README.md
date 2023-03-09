@@ -5,12 +5,12 @@ A simple chrome extension that can be used to mock Apollo Client graphql queries
 Extension is not published yet , but source code can be compiled and added to your chrome browser.
 
 ```
-npm run buil
+npm run build
 ```
 
-After the build
+After the build runs successfully you should see `build` folder now.
 
-Go to chrome://extensions/. At the top right, turn on Developer mode. Click Load unpacked. Find and select build folder that has been created in root file.
+Go to chrome://extensions/. At the top right, turn on Developer mode. Click Load unpacked. Find and select `build` folder that has been created in root file.
 
 # How does it work ?
 
