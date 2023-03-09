@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import MockWrapper from "../components/Form/MockWrapper";
-import { IMockData } from "../types/Interceptor";
+import { IMockData } from "../types/MockTypes";
 
 const Main = () => {
   const [interceptors, setInterceptors] = useState<IMockData[]>([]);

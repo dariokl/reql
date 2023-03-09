@@ -4,7 +4,7 @@ import Dropdown from "../Dropdown/Dropdown";
 import JsonEditor from "../Editor/JsonEditor";
 import MockForm from "./MockForm";
 import { useForm, FormProvider } from "react-hook-form";
-import { IMockData } from "../../types/Interceptor";
+import { IMockData } from "../../types/MockTypes";
 
 const MockWrapper: React.FC<PropsWithChildren & IMockData> = ({
   children,
