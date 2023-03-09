@@ -26,7 +26,7 @@ const Navbar: React.FC = (): JSX.Element => {
     );
   };
 
-  const createNewInterceptor = () => {
+  const createNewMock = () => {
     chrome.storage.local.set({
       [guid()]: {
         body: "",
@@ -43,7 +43,7 @@ const Navbar: React.FC = (): JSX.Element => {
           reQL.
         </span>
         <div className="flex justify-center mr-2">
-          <IconButtonWrapper onClick={createNewInterceptor}>
+          <IconButtonWrapper onClick={createNewMock}>
             <IoIosAddCircleOutline size={20} title="Add New" />
           </IconButtonWrapper>
         </div>

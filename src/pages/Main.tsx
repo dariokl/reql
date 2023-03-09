@@ -3,12 +3,12 @@ import MockWrapper from "../components/Form/MockWrapper";
 import { IMockData } from "../types/MockTypes";
 
 const Main = () => {
-  const [interceptors, setInterceptors] = useState<IMockData[]>([]);
+  const [mocks, setMocks] = useState<IMockData[]>([]);
 
   useEffect(() => {
     const listener = () => {
       chrome.storage.local.get(null, (data) => {
-        setInterceptors(
+        setMocks(
           Object.entries(data).map((mock) => ({
             id: mock[0],
             ...mock[1],
@@ -25,8 +25,8 @@ const Main = () => {
 
   return (
     <>
-      {interceptors.map((interceptor) => (
-        <MockWrapper {...interceptor} key={interceptor.id} />
+      {mocks.map((mock) => (
+        <MockWrapper {...mock} key={mock.id} />
       ))}
     </>
   );
