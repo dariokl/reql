@@ -1,0 +1,31 @@
+{
+  "name": "ReQL",
+  "description": "Mock your GraphQL requests.",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open the popup"
+  },
+  "icons": {
+    "128": "128.png"
+  },
+  "permissions": ["nativeMessaging","storage"],
+  "background": {
+    "service_worker": "/static/js/background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": ["/static/js/content.js"],
+      "matches": ["http://localhost/*"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["http://localhost/*"],
+      "resources": ["/static/js/intercept.js"]
+    }
+  ]
+}
