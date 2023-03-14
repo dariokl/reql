@@ -1,8 +1,16 @@
 # ReQL.
 
-A simple chrome extension that can be used to mock Apollo Client graphql queries and mutations.
+A simple chrome extension that can be used to mock GrapQL requests.
 
 Extension is not published yet , but source code can be compiled and added to your chrome browser.
+
+<img src="images/image_2.png"/>
+<p float="left" >
+<img src="images/image.png" style='width: 350px' height='400px'/>
+<img src='images/image_3.png' style='width: 350px' height='400px'/>
+</p>
+
+To compile source code:
 
 ```
 npm run build
