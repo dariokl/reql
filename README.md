@@ -5,8 +5,9 @@ A simple chrome extension that can be used to mock GrapQL requests.
 Extension is not published yet , but source code can be compiled and added to your chrome browser.
 
 <img src="images/image_2.png"/>
-<p float="left" >
+<p float="left" align='middle' >
 <img src="images/image.png" style='width: 400px' height='400px'/>
+
 <img src='images/image_3.png' style='width: 400px' height='400px'/>
 </p>
 
